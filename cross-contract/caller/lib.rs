@@ -20,7 +20,7 @@ mod caller {
         /// This one flips the value of the stored `bool` from `true`
         /// to `false` and vice versa.
         #[ink(message)]
-        pub fn call_flip(&mut self) {
+        pub fn call_flip(&mut self , function: ) {
             use ink::env::call::{ExecutionInput, Selector};
 
             let _result = ink::env::call::build_call::<ink::env::DefaultEnvironment>()
