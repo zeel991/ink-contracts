@@ -1,7 +1,7 @@
 # ink! Smart Contracts Tutorial Repository  
 
 Welcome to the **ink! Smart Contracts Tutorial Repository**! 🚀  
-This repository provides practical examples of ink! smart contracts, focusing on **cross-contract calls** and **contract upgradeability** techniques in Substrate-based blockchains.  
+This repository provides practical examples of ink! smart contracts.  
 
 ## 📌 What is ink!?  
 [ink!](https://use.ink/) is a Rust-based smart contract framework for Substrate, allowing developers to write WebAssembly-based smart contracts efficiently.  
@@ -25,7 +25,7 @@ To use and deploy these contracts, ensure you have the following installed:
 ```sh
 rustup update nightly
 rustup target add wasm32-unknown-unknown --toolchain nightly
-cargo install --force --locked cargo-contract
+cargo install --force cargo-contract
 ```
 
 ## 🤝 Contributing  
