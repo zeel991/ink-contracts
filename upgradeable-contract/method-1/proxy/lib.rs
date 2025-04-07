@@ -30,13 +30,13 @@ mod proxy {
         pub fn get_value(&self) -> u32 {
             self.value
         }
-        #[ink(message)]
-        pub fn double(&mut self) -> u32{
-            let mut value = self.get_value();
-            value = value.checked_add(value).expect("Overflow detected");
-            self.value = value;
-            self.value
-        }
+        // #[ink(message)]
+        // pub fn double(&mut self) -> u32{
+        //     let mut value = self.get_value();
+        //     value = value.checked_add(value).expect("Overflow detected");
+        //     self.value = value;
+        //     self.value
+        // }
 
         #[ink(message)]
         pub fn set_code(&mut self, code_hash: Hash) {
